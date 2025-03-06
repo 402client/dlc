@@ -722,7 +722,7 @@ function library:Introduction()
     background.BackgroundTransparency = 1
     background.ClipsDescendants = true
     background.Position = UDim2.new(0.5, 0, 0.5, 0)
-    background.Size = UDim2.new(0, 298, 0, 306)
+    background.Size = UDim2.new(0, 100, 0, 306)
     
     backgroundGradient.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(34, 34, 34)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(28, 28, 28))}
     backgroundGradient.Rotation = 90
@@ -759,7 +759,7 @@ function library:Introduction()
     xsxLogo.Position = UDim2.new(0.5, 0, 0.5, 0)
     xsxLogo.Size = UDim2.new(0, 448, 0, 150)
     xsxLogo.Visible = true
-    xsxLogo.Text = "loading..."
+    xsxLogo.Image = "https://create.roblox.com/store/asset/11295847899/Sleeping-Cat"
     xsxLogo.ImageColor3 = Color3.fromRGB(159, 115, 255)
     xsxLogo.ImageTransparency = 1
     
@@ -771,7 +771,7 @@ function library:Introduction()
     hashLogo.Position = UDim2.new(0.5, 0, 0.5, 0)
     hashLogo.Size = UDim2.new(0, 150, 0, 150)
     hashLogo.Visible = true
-    hashLogo.Text = "loaded succesfly"
+    hashLogo.Image = "https://create.roblox.com/store/asset/11295847899/Sleeping-Cat"
     hashLogo.ImageColor3 = Color3.fromRGB(159, 115, 255)
     hashLogo.ImageTransparency = 1
     
