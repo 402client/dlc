@@ -59,11 +59,12 @@ end
 
 local function checkDistance(player)
     local character = getCharacter(player)
-    return (character.PrimaryPart.Position - camera.CFrame.p).Magnitude <= esp.maxdistance
+    return character and character.PrimaryPart and (character.PrimaryPart.Position - camera.CFrame.p).Magnitude <= esp.maxdistance
 end
 
 local function checkVisible(player)
     local character = getCharacter(player)
+    if not character or not character.PrimaryPart then return false end
     local ray = workspace:Raycast(camera.CFrame.p, (character.PrimaryPart.Position - camera.CFrame.p).Unit * esp.maxdistance, {IgnoreWater = true, FilterType = Enum.RaycastFilterType.Blacklist, FilterDescendantsInstances = {camera, localPlayer.Character}})
     return ray and ray.Instance:IsDescendantOf(character)
 end
@@ -109,6 +110,11 @@ local function updateESP()
         end
 
         local character = getCharacter(player)
+        if not character or not character.PrimaryPart then
+            removePlayer(player)
+            continue
+        end
+
         local distance = (character.PrimaryPart.Position - camera.CFrame.p).Magnitude
         local onScreen = camera:WorldToViewportPoint(character.PrimaryPart.Position).Z > 0
 
