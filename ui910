@@ -305,7 +305,7 @@ function library.new(library_title, cfg_location)
             end
             Tab.Visible = true
             selected_tab = TabButton
-            library:tween(TabImage, TweenInfo.new(0.2, Enum.EasingStyle.Quad, Enum.EasingDirection.Out), {ImageColor3 = Color3.fromRGB(255,30,89)})
+            library:tween(TabImage, TweenInfo.new(0.2, Enum.EasingStyle.Quad, Enum.EasingDirection.Out), {ImageColor3 = Color3.fromRGB(129,114,127)})
         end)
         TabButton.MouseEnter:Connect(function()
             if selected_tab == TabButton then return end
@@ -661,7 +661,7 @@ function library.new(library_title, cfg_location)
                                 Size = UDim2.new(1, 0, 0, 25),
                                 Font = Enum.Font.Ubuntu,
                                 Text = "Always",
-                                TextColor3 = Color3.fromRGB(84, 101, 255),
+                                TextColor3 = Color3.fromRGB(134,96,127),
                                 TextSize = 14,
                                 ZIndex = 2,
                             }, KeybindFrame)
@@ -1252,7 +1252,7 @@ function library.new(library_title, cfg_location)
 
                             local Decoration = library:create("Frame", {
                                 Name = "Decoration",
-                                BackgroundColor3 = Color3.fromRGB(84, 101, 255),
+                                BackgroundColor3 = Color3.fromRGB(134,96,127),
                                 BorderSizePixel = 0,
                                 Size = UDim2.new(0, 1, 1, 0),
                                 Visible = false,
@@ -1501,7 +1501,7 @@ function library.new(library_title, cfg_location)
 
                             local Decoration = library:create("Frame", {
                                 Name = "Decoration",
-                                BackgroundColor3 = Color3.fromRGB(84, 101, 255),
+                                BackgroundColor3 = Color3.fromRGB(134,96,127),
                                 BorderSizePixel = 0,
                                 Size = UDim2.new(0, 1, 1, 0),
                                 Visible = false,
@@ -1690,7 +1690,7 @@ function library.new(library_title, cfg_location)
                             ScrollBarThickness = 2,
                             TopImage = "rbxasset://textures/ui/Scroll/scroll-middle.png",
                             AnchorPoint = Vector2.new(0.5, 0),
-                            ScrollBarImageColor3 = Color3.fromRGB(84, 101, 255),
+                            ScrollBarImageColor3 = Color3.fromRGB(134,96,127),
                         }, Scroll)
                         ScrollFrame.MouseEnter:Connect(function()
                             library:tween(ScrollFrame, TweenInfo.new(0.2, Enum.EasingStyle.Quad, Enum.EasingDirection.Out), {BorderColor3 = Color3.fromRGB(50, 50, 50)})
@@ -1736,7 +1736,7 @@ function library.new(library_title, cfg_location)
                             local Decoration = library:create("Frame", {
                                 Name = "Decoration",
                                 Parent = Button,
-                                BackgroundColor3 = Color3.fromRGB(84, 101, 255),
+                                BackgroundColor3 = Color3.fromRGB(134,96,127),
                                 BorderSizePixel = 0,
                                 Size = UDim2.new(0, 1, 1, 0),
                                 Visible = false,
@@ -1814,7 +1814,7 @@ function library.new(library_title, cfg_location)
                             local Decoration = library:create("Frame", {
                                 Name = "Decoration",
                                 Parent = Button,
-                                BackgroundColor3 = Color3.fromRGB(84, 101, 255),
+                                BackgroundColor3 = Color3.fromRGB(134,96,127),
                                 BorderSizePixel = 0,
                                 Size = UDim2.new(0, 1, 1, 0),
                                 Visible = false,
