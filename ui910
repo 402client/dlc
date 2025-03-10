@@ -423,7 +423,7 @@ function library.new(library_title, cfg_location)
                 is_first_section = false
                 selected_section = SectionButton
 
-                SectionButton.TextColor3 = Color3.fromRGB(127,129,145) 
+                SectionButton.TextColor3 = Color3.fromRGB(196,129,145) 
     
                 SectionDecoration.Visible = true
                 SectionFrame.Visible = true
