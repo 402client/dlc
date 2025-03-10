@@ -305,7 +305,7 @@ function library.new(library_title, cfg_location)
             end
             Tab.Visible = true
             selected_tab = TabButton
-            library:tween(TabImage, TweenInfo.new(0.2, Enum.EasingStyle.Quad, Enum.EasingDirection.Out), {ImageColor3 = Color3.fromRGB(84, 101, 255)})
+            library:tween(TabImage, TweenInfo.new(0.2, Enum.EasingStyle.Quad, Enum.EasingDirection.Out), {ImageColor3 = Color3.fromRGB(132,142,143)})
         end)
         TabButton.MouseEnter:Connect(function()
             if selected_tab == TabButton then return end
